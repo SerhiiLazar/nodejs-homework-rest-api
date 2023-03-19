@@ -1,5 +1,6 @@
 const {Schema, model} = require("mongoose");
 const {handleMangooseError} = require("../helpers");
+// const { shema } = require("../schemas");
 
 
 const contactSchema = new Schema({
@@ -19,6 +20,11 @@ const contactSchema = new Schema({
         type: Boolean,
         default: false,
     },
+    owner: {
+        type: Schema.Types.ObjectId,
+        ref: "user",
+        required: true,
+    }
 }, {versionKey: false, timestamps: true});
 
 contactSchema.post("save", handleMangooseError);

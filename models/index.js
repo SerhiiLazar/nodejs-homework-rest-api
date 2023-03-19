@@ -1,5 +1,8 @@
 const {Contact} = require('./contact');
+const {emailRegexp, User} = require('./user');
 
 module.exports = {
-    Contact
+    Contact,
+    emailRegexp,
+    User
 }
