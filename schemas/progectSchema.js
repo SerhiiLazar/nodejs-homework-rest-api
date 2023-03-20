@@ -15,11 +15,11 @@ const contactFaforite = Joi.object({
   favorite: Joi.boolean().required(),
 })
 
-const schemas = {
+const shema = {
   contactSchema,
   contactFaforite
 }
 
 module.exports = {
-  schemas,
+  shema,
 };

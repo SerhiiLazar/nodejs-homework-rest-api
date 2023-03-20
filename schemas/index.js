@@ -1,5 +1,7 @@
-const {schemas} = require('./progectSchema');
+const { shema } = require('./progectSchema');
+const { userSchema } = require('./userSchema');
 
 module.exports = {
-    schemas,
+    shema,
+    userSchema
 }
